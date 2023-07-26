@@ -1,5 +1,5 @@
 {
-  "name": "@sponsorcoin/prod",
+  "name": "@sponsorcoin/spCoinProdModule",
   "version": "1.0.0",
   "description": "SponsorCoin production access library",
   "main": "spCoinMethods.js",
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sponsorCoinAdmin/prod.git"
+    "url": "git+https://github.com/sponsorCoinAdmin/spCoinProdModule.git"
   },
   "author": "sponsorcoin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sponsorCoinAdmin/prod/issues"
+    "url": "https://github.com/sponsorCoinAdmin/spCoinProdModule/issues"
   },
-  "homepage": "https://github.com/sponsorCoinAdmin/prod#readme"
+  "homepage": "https://github.com/sponsorCoinAdmin/spCoinProdModule#readme"
 }
