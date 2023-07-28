@@ -5,7 +5,8 @@ const { SpCoinAddMethods } = require("./lib/spCoinAddMethods");
 const { SpCoinReadMethods } = require("./lib/SpCoinReadMethods");
 const { SpCoinRewardsMethods } = require("./lib/spCoinRewardsMethods"); 
 const { SpCoinStakingMethods } = require("./lib/spCoinStakingMethods"); 
-const { second, minute, hour, day, week, year, month , millennium } = require("./lib/spCoinStakingMethods"); 
+const { DateTime } = require("./lib/utils/dateTime"); 
+// const { second, minute, hour, day, week, year, month , millennium } = require("./lib/spCoinStakingMethods"); 
 spCoinConnectMethods = async (spCoinContractDeployed) => {
   spCoinAddMethods = new SpCoinAddMethods(spCoinContractDeployed);
   spCoinDeleteMethods = new SpCoinDeleteMethods(spCoinContractDeployed);
@@ -14,4 +15,5 @@ spCoinConnectMethods = async (spCoinContractDeployed) => {
   spCoinReadMethods = new SpCoinReadMethods(spCoinContractDeployed);
   spCoinRewardsMethods = new SpCoinRewardsMethods(spCoinContractDeployed);
   spCoinStakingMethods = new SpCoinStakingMethods(spCoinContractDeployed);
+  dateTime = new DateTime();
 }
