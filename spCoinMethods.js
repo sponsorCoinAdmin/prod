@@ -3,9 +3,9 @@ const { SpCoinERC20Methods } = require("./lib/spCoinTransferMethods");
 const { SpCoinDeleteMethods } = require("./lib/spCoinDeleteMethods");
 const { SpCoinAddMethods } = require("./lib/spCoinAddMethods");
 const { SpCoinReadMethods } = require("./lib/SpCoinReadMethods");
-const { SpCoinRewardsMethods } = require("./lib/spCoinRewardsMethods"); 
-const { SpCoinStakingMethods } = require("./lib/spCoinStakingMethods"); 
-const { DateTime } = require("./lib/utils/dateTime"); 
+const { SpCoinRewardsMethods } = require("./lib/spCoinRewardsMethods");
+const { SpCoinStakingMethods } = require("./lib/spCoinStakingMethods");
+const { DateTime,  dateInSeconds} = require("./lib/utils/dateTime");
 // const { second, minute, hour, day, week, year, month , millennium } = require("./lib/spCoinStakingMethods"); 
 spCoinConnectMethods = async (spCoinContractDeployed) => {
   spCoinAddMethods = new SpCoinAddMethods(spCoinContractDeployed);
@@ -16,4 +16,6 @@ spCoinConnectMethods = async (spCoinContractDeployed) => {
   spCoinRewardsMethods = new SpCoinRewardsMethods(spCoinContractDeployed);
   spCoinStakingMethods = new SpCoinStakingMethods(spCoinContractDeployed);
   dateTime = new DateTime();
+  let currDateInSeconds = dateInSeconds();
+  console.log("ZZZZ currDateInSeconds = ", currDateInSeconds);
 }
