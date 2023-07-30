@@ -1,5 +1,5 @@
 {
-  "name": "@sponsorcoin/spCoinProdModule",
+  "name": "@sponsorcoin/spcoin-prod",
   "version": "1.0.0",
   "description": "SponsorCoin production access library",
   "main": "spCoinMethods.js",
