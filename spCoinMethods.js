@@ -18,6 +18,4 @@ spCoinConnectMethods = async (spCoinContractDeployed) => {
   spCoinStakingMethods = new SpCoinStakingMethods(spCoinContractDeployed);
   dateTime = new DateTime();
   utils = new Utils();
-  let currDateInSeconds = dateTime.dateInSeconds();
-  console.log("ZZZZ currDateInSeconds = ", currDateInSeconds);
 }
